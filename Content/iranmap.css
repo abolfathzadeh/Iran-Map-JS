@@ -1,0 +1,406 @@
+/*
+ * Iran Map - SVG and Responsive.
+ * Free and open source.
+ * Version 1.1.0
+ * By: MohammadReza Pourmohammad.
+ * Email: mohammadrpm@gmail.com
+ * Web: http://mrpm.ir
+ */
+
+#IranMap{
+    display: block;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 99%;
+    height:99%  !important;
+    margin: 1px auto;
+}
+
+#IranMap .show-title{
+    display: none;
+    position: absolute;
+    background-color: #FCFC03;    /*#FCFC03;*/
+    /*background-color: #333;
+    color: gold !important;*/
+    color: gold; /*#FAFADE;*/
+    margin: 0 !important;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 26px;
+   
+     border-radius:50px 50px 50px 50px ; 
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    opacity: 0.8;
+    font-size:x-large ;
+    font-weight:bold;
+         /*display: none;
+    position: absolute;
+    background-color: #333;
+    color: gold !important;
+    margin: 0 !important;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 26px;
+  
+     border-radius:50px 50px 50px 50px ; 
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    opacity: 0.8;
+    font-size:x-large ;
+    font-weight:bold;*/
+}
+.testGreen{
+    background:green !important;
+    background-color:green !important ;
+}
+#IranMap .map{
+    display: block;
+    /*background-color: #E8F2FB;*/
+    float: left;
+    width: 60%;
+    height:99% ;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#IranMap .map svg{
+    /*height:600px !important ;
+    width: 600px !important;*/
+   
+    height:99% !important ;/* */
+    min-height:540px;
+        width:85% !important;
+}
+#IranMap .map .border path, #IranMap .map .island path{
+    fill: #fff;
+}
+#IranMap .map .province path{
+    /*fill: #999;*/
+}
+#IranMap .map .sea path, #IranMap .map .lake path{
+    fill: #6caed8;
+}
+#IranMap .map .province path:hover, #IranMap .map .island path:hover, #IranMap .map .province path.hover, #IranMap .map .island path.hover{
+    fill: #c33a2c !important;
+    cursor: pointer;
+}
+
+#IranMap .list{
+    display: block;
+    float: right;
+    max-width: 390px;
+}
+#IranMap .list2{
+    display: block;
+    float: right;
+    max-width: 390px;
+}
+#IranMap .list ul{
+    padding: 0;
+}
+#IranMap .list2 ul{
+    padding: 0;
+}
+#IranMap .list>ul{
+    margin-left: 10px;
+}
+#IranMap .list2>ul{
+    margin-left: 10px;
+}
+#IranMap .list li{
+    list-style: none;
+    font-family:'B Nazanin';
+   
+        
+}
+#IranMap .list2 li{
+    list-style: none;
+    font-family:'B Nazanin';
+    font-size: small;
+        
+}
+#IranMap .list span{
+    background: #242424;
+    color: #ecf0f1;
+    display: block;
+    margin: 0 2px;
+    padding: 0 8px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border-radius: 40px 40px 0px 0px ; 
+    text-align:center;
+    max-width:332px;
+    width:100%;
+}
+#IranMap .list span:hover{
+    background: #c33a2c;
+    color: gold ;
+    display: block;
+    margin: 0 2px;
+    padding: 0 8px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    border-radius: 40px 40px 0px 0px ; 
+    text-align:center;
+    max-width:332px;
+     width:100%;
+    text-decoration:none;
+}
+#IranMap .list2 span.GroupAll{
+    background: #34495e ;
+    color: #ecf0f1;
+    display: block;
+    margin: 0 2px;
+    padding: 0 8px;
+    line-height: 26px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    border-radius: 20px 20px 10px 10px ; 
+    text-align:center;
+    max-width:335px;
+    height:50px
+}
+#IranMap .list2 span{
+    background: #242424;
+    color: black;
+    display: block;
+    margin: 0 2px;
+    padding: 0 8px;
+    line-height: 26px;
+    margin-top: -27px;
+    margin-bottom: 2px;
+    border-radius: 50px 50px 50px 50px ; 
+    text-align:center;
+    max-width:280px;
+}
+#IranMap .list a:link{
+    background: #34495e;
+    color: gold;
+    text-decoration: none;
+    
+}
+#IranMap .list2 a:link{
+    background: #34495e;
+    color: gold;
+    text-decoration: none;
+}
+
+#IranMap .list li ul li{
+    display: block;
+    float: right;
+    width: 33.33333333333333%;/*33.33333333333333%;*/
+    max-width:117px;
+}
+#IranMap .list2 li ul li{
+    display: block;
+    float: right;
+    width: 14.28571428571429%;/*14.28571428571429%;*/
+    max-width:120px;
+}
+#IranMap .list Group ul li{
+    display: block;
+    float: right;
+    width: 10%;/*33.33333333333333%;*/
+    max-width:60px;
+}
+#IranMap .list li ul li a{
+    background: #34495e;
+    color: #ecf0f1;
+    display: block;
+    padding: 0 8px;
+    line-height: 26px;
+    margin: 2px 2px;
+    text-decoration: solid;
+}
+#IranMap .list li ul li a:link{
+    background: #34495e;
+    color: #ecf0f1;
+    display: block;
+    padding: 0 8px;
+    line-height: 26px;
+    margin: 2px 2px;
+    text-decoration: solid;
+}
+#IranMap .list Group ul li a:link{
+    background: #34495e;
+    color: #ecf0f1;
+    display: block;
+    padding: 0 8px;
+    line-height: 26px;
+    margin: 2px 2px;
+    text-decoration: solid;
+}
+#IranMap .list li ul li .spanA{
+    background: #34495e;
+    color: #ecf0f1;
+    display: block;
+    padding: 0 8px;
+    line-height: 26px;
+    margin: 2px 2px;
+    text-decoration: solid;
+}
+#IranMap .list li ul li .spanA:link{
+    background: #34495e;
+    color: #ecf0f1;
+    display: block;
+    padding: 0 8px;
+    line-height: 26px;
+    margin: 2px 2px;
+    text-decoration: solid;
+}
+#IranMap .list ul li .iIranMap span:hover, #IranMap .list ul li .iIranMap span.hover{
+    background: #c33a2c;
+}
+#IranMap .list li ul li a:hover, #IranMap .list li ul li a.hover{
+    background: #c33a2c;
+}
+#IranMap .list ul:before, #IranMap .list ul:after{
+    display: table;
+    content: " ";
+}
+#IranMap .list ul, #IranMap .list ul:after{
+    clear: both;
+}
+
+#IranMap .city{
+    clear: both;
+    padding: 10px 0;
+}
+.path-city {
+        stroke: #fff;
+        opacity:1;
+        stroke-width:0.05;
+        white-space:nowrap;
+        /*stroke-dasharray: 1200;
+  stroke-dashoffset: 10;
+  stroke-linecap: butt;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;*/
+    }
+.GroupTax{}
+ .IranAll:hover {
+            fill: #fff;
+
+        }
+        .path-city:hover {
+            fill: #fff;
+            color:gold;
+            /*opacity:0.5*/
+            
+  /*stroke-dashoffset: 10;
+  stroke-dasharray: 1200;
+  stroke-width: 10;*/
+        }
+
+    .path-city-g1 {
+        fill: 	#D29DEE;/*D29DEE*/
+        /*background-color: #D29DEE;*/
+        background: #D29DEE !important;
+	    /*border-color: #D29DEE !important;
+	    color: #D29DEE;*/
+    }
+
+    .path-city-g2 {
+       
+         fill: 	#008B8B;
+         background: #008B8B !important;
+    }
+
+    .path-city-g3 {
+        fill: #ffa71e;             /*D98880*/
+         background: #ffa71e !important;
+    }
+
+    .path-city-g4 {
+        fill: #89cb2b;
+         background: #89cb2b !important;
+    }
+        .path-city-g5 {
+       
+         fill: 	#FF7F50;
+         background: #FF7F50 !important;
+    }
+.path-city-g6 {
+         fill: gold;
+         background: gold !important;
+    }
+.path-city-g7 {
+         fill: #8FBC8F;
+         background: #8FBC8F !important;
+    }
+.path-city-g8 {
+        fill: 	#8FBC8F;
+    }
+.path-city-g9 {
+        fill: 	#BDB76B;
+    }
+.path-city-g10 {
+        fill: 	#ADFF2F;
+    }
+.path-city-g11 {
+        fill: 	#F08080;
+    }
+.path-city-g12 {
+        fill: 	#ff9966;
+    }
+.path-city-g13 {
+        fill: 	#4BABB7;
+    }
+.path-city-g14 {
+        fill: 	#9ACD32;
+    }
+.path-city-g15 {
+        fill: 	#ECA237;
+    }
+/*@media(max-width: 930px){
+    #IranMap .list{
+        width: 30%;
+    }
+    #IranMap .map{
+        width: 100%;
+    }
+}
+@media(max-width: 745px){
+    #IranMap .list li ul li{
+        width: 30%;
+    }
+     #IranMap .map{
+        width: 100%;
+    }
+}
+@media(max-width: 515px){
+     #IranMap .map{
+        width: 70%;
+        height:100%;
+    }
+     #IranMap .list{
+        width: 30%;
+    }
+    #IranMap .list li ul li{
+        width: 33.33333333333333%;
+    }
+    #IranMap .list li ul li a{
+        font-size: 10px !important;
+    }
+}
+@media(max-width: 515px){
+    #IranMap .list li ul li{
+        width: 30%;
+    }
+}
+@media(max-width: 250px){
+    #IranMap .list li ul li{
+        width: 30%;
+    }
+}*/
